@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
+<html lang="zh-CN"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="common/common">
+    <head>
+        <title>登錄頁面</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <link rel="stylesheet" type="text/css" th:href="@{/mg/css/table.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/mg/css/public.css}" />
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <link href="//cdn.bootcss.com/bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="//cdn.bootcss.com/bootstrap/3.0.1/js/bootstrap.js"></script>
+    <body>
+    <div th:fragment="content" >
+        <!-- 自己的内容 -->
+        <div class="container">
+        </div>
+    </div>
+    </body>
 </html>

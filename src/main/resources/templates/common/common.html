@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!-- 仅作为模板使用,服务端不要直接返回 -->
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>公共頁面</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" th:href="@{/mg/css/table.css}" />
+        <link rel="stylesheet" type="text/css" th:href="@{/mg/css/public.css}" />
+        <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+        <link href="//cdn.bootcss.com/bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet"/>
+        <script src="//cdn.bootcss.com/bootstrap/3.0.1/js/bootstrap.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div style="margin-top: 5%" th:include="this :: content"></div>
+        </div>
+    </body>
+</html>
